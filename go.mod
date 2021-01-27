@@ -3,48 +3,39 @@ module github.com/pmalek-sumo/prometheus
 go 1.14
 
 require (
-	github.com/Azure/azure-sdk-for-go v49.2.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.15
+	github.com/Azure/azure-sdk-for-go v50.2.0+incompatible
+	github.com/Azure/go-autorest/autorest v0.11.17
 	github.com/Azure/go-autorest/autorest/adal v0.9.10
-	github.com/Azure/go-autorest/autorest/to v0.3.0 // indirect
-	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
-	github.com/HdrHistogram/hdrhistogram-go v0.9.0 // indirect
-	github.com/Microsoft/go-winio v0.4.14 // indirect
 	github.com/alecthomas/units v0.0.0-20201120081800-1786d5ef83d4
-	github.com/armon/go-metrics v0.3.3 // indirect
 	github.com/aws/aws-sdk-go v1.36.15
 	github.com/cespare/xxhash/v2 v2.1.1
-	github.com/containerd/containerd v1.3.4 // indirect
 	github.com/dgryski/go-sip13 v0.0.0-20200911182023-62edffca9245
 	github.com/digitalocean/godo v1.54.0
-	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v20.10.1+incompatible
-	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/edsrzf/mmap-go v1.0.0
 	github.com/go-kit/kit v0.10.0
 	github.com/go-logfmt/logfmt v0.5.0
 	github.com/go-openapi/strfmt v0.19.11
-	github.com/go-openapi/validate v0.19.14 // indirect
 	github.com/gogo/protobuf v1.3.1
 	github.com/golang/snappy v0.0.2
 	github.com/google/pprof v0.0.0-20201218002935-b9804c9f04c2
 	github.com/gophercloud/gophercloud v0.15.0
+	github.com/gorilla/mux v1.7.4 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/hashicorp/consul/api v1.7.0
-	github.com/hashicorp/go-hclog v0.12.2 // indirect
-	github.com/hashicorp/go-immutable-radix v1.2.0 // indirect
-	github.com/hashicorp/golang-lru v0.5.4 // indirect
+	github.com/hashicorp/go-hclog v0.14.0 // indirect
+	github.com/hashicorp/go-msgpack v0.5.5 // indirect
+	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/hetznercloud/hcloud-go v1.23.1
 	github.com/influxdata/influxdb v1.8.3
 	github.com/json-iterator/go v1.1.10
+	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/miekg/dns v1.1.35
-	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635 // indirect
-	github.com/morikuni/aec v1.0.0 // indirect
+	github.com/mitchellh/go-testing-interface v1.14.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/oklog/run v1.1.0
 	github.com/oklog/ulid v1.3.1
-	github.com/opencontainers/go-digest v1.0.0 // indirect
-	github.com/opencontainers/image-spec v1.0.1 // indirect
+	github.com/onsi/ginkgo v1.13.0 // indirect
 	github.com/opentracing-contrib/go-stdlib v1.0.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/pkg/errors v0.9.1
@@ -53,6 +44,7 @@ require (
 	github.com/prometheus/client_model v0.2.0
 	github.com/prometheus/common v0.15.0
 	github.com/prometheus/exporter-toolkit v0.5.1
+	github.com/prometheus/prometheus v0.0.0-00010101000000-000000000000
 	github.com/samuel/go-zookeeper v0.0.0-20201211165307-7117e9ea2414
 	github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749
 	github.com/shurcooL/vfsgen v0.0.0-20200824052919-0d455de96546
@@ -72,8 +64,6 @@ require (
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776
-	gotest.tools v2.2.0+incompatible // indirect
-	gotest.tools/v3 v3.0.3 // indirect
 	k8s.io/api v0.20.1
 	k8s.io/apimachinery v0.20.1
 	k8s.io/client-go v0.20.1
@@ -82,6 +72,9 @@ require (
 )
 
 replace (
+	github.com/Azure/azure-sdk-for-go => github.com/pmalek-sumo/azure-sdk-for-go/v51 v51.0.0
+	github.com/prometheus/prometheus => github.com/pmalek-sumo/prometheus v1.8.2-0.20210127171619-237175fc5afa
+
 	k8s.io/klog => github.com/simonpasquier/klog-gokit v0.3.0
 	k8s.io/klog/v2 => github.com/simonpasquier/klog-gokit/v2 v2.0.1
 )
