@@ -1,4 +1,4 @@
-module github.com/prometheus/prometheus
+module github.com/pmalek-sumo/prometheus
 
 go 1.14
 
@@ -30,7 +30,7 @@ require (
 	github.com/google/pprof v0.0.0-20201218002935-b9804c9f04c2
 	github.com/gophercloud/gophercloud v0.15.0
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
-	github.com/hashicorp/consul/api v1.8.1
+	github.com/hashicorp/consul/api v1.7.0
 	github.com/hashicorp/go-hclog v0.12.2 // indirect
 	github.com/hashicorp/go-immutable-radix v1.2.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
