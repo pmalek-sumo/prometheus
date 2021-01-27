@@ -20,22 +20,15 @@ require (
 	github.com/golang/snappy v0.0.2
 	github.com/google/pprof v0.0.0-20201218002935-b9804c9f04c2
 	github.com/gophercloud/gophercloud v0.15.0
-	github.com/gorilla/mux v1.7.4 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/hashicorp/consul/api v1.7.0
-	github.com/hashicorp/go-hclog v0.14.0 // indirect
-	github.com/hashicorp/go-msgpack v0.5.5 // indirect
-	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/hetznercloud/hcloud-go v1.23.1
 	github.com/influxdata/influxdb v1.8.3
 	github.com/json-iterator/go v1.1.10
-	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/miekg/dns v1.1.35
-	github.com/mitchellh/go-testing-interface v1.14.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/oklog/run v1.1.0
 	github.com/oklog/ulid v1.3.1
-	github.com/onsi/ginkgo v1.13.0 // indirect
 	github.com/opentracing-contrib/go-stdlib v1.0.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/pkg/errors v0.9.1
@@ -73,7 +66,7 @@ require (
 
 replace (
 	github.com/Azure/azure-sdk-for-go => github.com/pmalek-sumo/azure-sdk-for-go/v51 v51.0.0
-	github.com/prometheus/prometheus => github.com/pmalek-sumo/prometheus v1.8.2-0.20210127171619-237175fc5afa
+	github.com/prometheus/prometheus => ./
 
 	k8s.io/klog => github.com/simonpasquier/klog-gokit v0.3.0
 	k8s.io/klog/v2 => github.com/simonpasquier/klog-gokit/v2 v2.0.1
