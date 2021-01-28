@@ -20,11 +20,11 @@ import (
 	"unicode/utf8"
 
 	"github.com/pkg/errors"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunkenc"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	tsdb_errors "github.com/pmalek-sumo/prometheus/v2/tsdb/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/index"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 )
 
 // Querier provides querying access over time series data of a fixed
@@ -367,8 +367,8 @@ func PostingsForMatchers(ix IndexReader, ms ...labels.Matcher) (index.Postings, 
 		} else { // l=""
 			// If the matchers for a labelname selects an empty value, it selects all
 			// the series which don't have the label name set too. See:
-			// https://github.com/prometheus/prometheus/issues/3575 and
-			// https://github.com/prometheus/prometheus/pull/3578#issuecomment-351653555
+			// https://github.com/pmalek-sumo/prometheus/v2/issues/3575 and
+			// https://github.com/pmalek-sumo/prometheus/v2/pull/3578#issuecomment-351653555
 			it, err := inversePostingsForMatcher(ix, m)
 			if err != nil {
 				return nil, err

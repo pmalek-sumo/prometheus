@@ -20,10 +20,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/promql"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql"
 )
 
 var scenarios = map[string]struct {

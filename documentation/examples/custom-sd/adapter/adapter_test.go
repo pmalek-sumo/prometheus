@@ -17,8 +17,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
 )
 
 // TestGenerateTargetGroups checks that the target is correctly generated.

@@ -30,11 +30,11 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/encoding"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/fileutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/wal"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/wal"
 )
 
 // WALEntryType indicates what data a WAL entry contains.

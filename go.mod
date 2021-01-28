@@ -5,6 +5,7 @@ go 1.12
 replace k8s.io/klog => github.com/simonpasquier/klog-gokit v0.1.0
 
 require (
+	contrib.go.opencensus.io/exporter/ocagent v0.7.0 // indirect
 	github.com/Azure/azure-sdk-for-go v23.2.0+incompatible
 	github.com/Azure/go-autorest v11.2.8+incompatible
 	github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4
@@ -22,6 +23,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.14.6
 	github.com/hashicorp/consul/api v1.1.0
 	github.com/influxdata/influxdb v1.7.7
+	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.7
 	github.com/miekg/dns v1.1.15
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
@@ -34,7 +36,6 @@ require (
 	github.com/prometheus/client_golang v1.1.0
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4
 	github.com/prometheus/common v0.6.0
-	github.com/prometheus/prometheus v0.0.0-20180315085919-58e2a31db8de
 	github.com/samuel/go-zookeeper v0.0.0-20190810000440-0ceca61e4d75
 	github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749
 	github.com/shurcooL/vfsgen v0.0.0-20181202132449-6a9ea43bcacd
@@ -62,4 +63,4 @@ replace github.com/golang/lint => golang.org/x/lint v0.0.0-20190409202823-959b44
 // v1.1.7 introduced a bug around marshaling Point values. Check again later if tests pass with a newer version.
 replace github.com/json-iterator/go => github.com/json-iterator/go v1.1.6
 
-replace github.com/prometheus/prometheus => ./
+replace github.com/pmalek-sumo/prometheus/v2 => ./

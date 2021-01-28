@@ -23,9 +23,9 @@ import (
 	"net/url"
 
 	"github.com/go-kit/kit/log"
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/testutil"
 )
 
 func TestConfiguredService(t *testing.T) {

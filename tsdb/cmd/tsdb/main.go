@@ -30,13 +30,14 @@ import (
 	"text/tabwriter"
 	"time"
 
+	"gopkg.in/alecthomas/kingpin.v2"
+
 	"github.com/go-kit/kit/log"
 	"github.com/pkg/errors"
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	tsdb_errors "github.com/pmalek-sumo/prometheus/v2/tsdb/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 )
 
 func main() {

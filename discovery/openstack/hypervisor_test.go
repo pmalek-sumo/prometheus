@@ -18,8 +18,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/util/testutil"
 )
 
 type OpenstackSDHypervisorTestSuite struct {

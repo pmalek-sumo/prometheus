@@ -21,11 +21,11 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/storage"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
 )
 
 var (

@@ -20,12 +20,12 @@ import (
 
 	"github.com/go-kit/kit/log"
 
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/logging"
+	"github.com/pmalek-sumo/prometheus/v2/storage"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/logging"
-	"github.com/prometheus/prometheus/storage"
 )
 
 // startTimeCallback is a callback func that return the oldest timestamp stored in a storage.

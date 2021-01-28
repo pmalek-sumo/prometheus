@@ -18,11 +18,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/fileutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/index"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/testutil"
 )
 
 func TestRepairBadIndexVersion(t *testing.T) {

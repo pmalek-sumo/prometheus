@@ -25,6 +25,8 @@ import (
 	"sync"
 	"time"
 
+	"gopkg.in/alecthomas/kingpin.v2"
+
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/gogo/protobuf/proto"
@@ -33,17 +35,16 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/model"
-	"gopkg.in/alecthomas/kingpin.v2"
 
 	influx "github.com/influxdata/influxdb/client/v2"
 
 	"github.com/prometheus/common/promlog"
 	"github.com/prometheus/common/promlog/flag"
 
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/graphite"
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/influxdb"
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/opentsdb"
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/pmalek-sumo/prometheus/v2/documentation/examples/remote_storage/remote_storage_adapter/graphite"
+	"github.com/pmalek-sumo/prometheus/v2/documentation/examples/remote_storage/remote_storage_adapter/influxdb"
+	"github.com/pmalek-sumo/prometheus/v2/documentation/examples/remote_storage/remote_storage_adapter/opentsdb"
+	"github.com/pmalek-sumo/prometheus/v2/prompb"
 )
 
 type config struct {

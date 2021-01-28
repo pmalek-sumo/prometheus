@@ -27,13 +27,13 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/oklog/ulid"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunkenc"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/encoding"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/index"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/wal"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/wal"
 )
 
 var (

@@ -25,10 +25,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/notifier"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/rules"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 )
 
 var promPath string

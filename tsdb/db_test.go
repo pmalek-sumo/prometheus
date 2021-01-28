@@ -28,14 +28,14 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/oklog/ulid"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/index"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/tsdbutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/wal"
 	"github.com/prometheus/client_golang/prometheus"
 	prom_testutil "github.com/prometheus/client_golang/prometheus/testutil"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/testutil"
-	"github.com/prometheus/prometheus/tsdb/tsdbutil"
-	"github.com/prometheus/prometheus/tsdb/wal"
 )
 
 func openTestDB(t testing.TB, opts *Options) (db *DB, close func()) {
@@ -491,7 +491,7 @@ func TestDB_Snapshot(t *testing.T) {
 
 // TestDB_Snapshot_ChunksOutsideOfCompactedRange ensures that a snapshot removes chunks samples
 // that are outside the set block time range.
-// See https://github.com/prometheus/prometheus/issues/5105
+// See https://github.com/pmalek-sumo/prometheus/v2/issues/5105
 func TestDB_Snapshot_ChunksOutsideOfCompactedRange(t *testing.T) {
 	db, delete := openTestDB(t, nil)
 	defer delete()
@@ -1339,7 +1339,7 @@ func TestOverlappingBlocksDetectsAllOverlaps(t *testing.T) {
 	}, OverlappingBlocks(nc1))
 }
 
-// Regression test for https://github.com/prometheus/prometheus/tsdb/issues/347
+// Regression test for https://github.com/pmalek-sumo/prometheus/v2/tsdb/issues/347
 func TestChunkAtBlockBoundary(t *testing.T) {
 	db, delete := openTestDB(t, nil)
 	defer func() {

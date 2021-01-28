@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/wal"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/wal"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 )
 
 var defaultRetryInterval = 100 * time.Millisecond

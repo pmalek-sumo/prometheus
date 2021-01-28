@@ -16,12 +16,12 @@ package tsdb_test
 import (
 	"testing"
 
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/storage/tsdb"
+	"github.com/pmalek-sumo/prometheus/v2/util/teststorage"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage/tsdb"
-	"github.com/prometheus/prometheus/util/teststorage"
-	"github.com/prometheus/prometheus/util/testutil"
 )
 
 func TestMetrics(t *testing.T) {

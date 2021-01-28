@@ -26,14 +26,14 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
 
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/relabel"
+	"github.com/pmalek-sumo/prometheus/v2/prompb"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb"
+	tsdbLabels "github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/tsdb"
-	tsdbLabels "github.com/prometheus/prometheus/tsdb/labels"
 )
 
 // String constants for instrumentation.

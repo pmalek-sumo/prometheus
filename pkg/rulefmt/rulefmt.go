@@ -19,13 +19,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pkg/errors"
-	"github.com/prometheus/common/model"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/template"
+	"github.com/pkg/errors"
+	"github.com/prometheus/common/model"
+
+	"github.com/pmalek-sumo/prometheus/v2/pkg/timestamp"
+	"github.com/pmalek-sumo/prometheus/v2/promql"
+	"github.com/pmalek-sumo/prometheus/v2/template"
 )
 
 // Error represents semantical errors on parsing rule groups.

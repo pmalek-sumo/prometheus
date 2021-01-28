@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/prometheus/prometheus/tsdb/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/testutil"
 )
 
 type pair struct {

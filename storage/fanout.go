@@ -22,8 +22,8 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
 )
 
 type fanout struct {

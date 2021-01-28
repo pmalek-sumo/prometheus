@@ -39,11 +39,11 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
 
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/relabel"
 	"github.com/prometheus/alertmanager/api/v2/models"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
 )
 
 const (

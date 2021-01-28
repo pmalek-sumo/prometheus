@@ -18,10 +18,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/pmalek-sumo/prometheus/v2/storage"
+	"github.com/pmalek-sumo/prometheus/v2/storage/tsdb"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/storage/tsdb"
-	"github.com/prometheus/prometheus/util/testutil"
 )
 
 // New returns a new storage for testing purposes

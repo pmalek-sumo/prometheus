@@ -16,12 +16,13 @@ package kubernetes
 import (
 	"testing"
 
-	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
+
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/prometheus/common/model"
 )
 
 func makeEndpoints() *v1.Endpoints {

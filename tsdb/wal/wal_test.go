@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/testutil"
 	client_testutil "github.com/prometheus/client_golang/prometheus/testutil"
-	"github.com/prometheus/prometheus/tsdb/testutil"
 )
 
 // TestWALRepair_ReadingError ensures that a repair is run for an error
@@ -47,7 +47,7 @@ func TestWALRepair_ReadingError(t *testing.T) {
 		},
 		// Ensures that the page buffer is big enough to fit
 		// an entire page size without panicing.
-		// https://github.com/prometheus/prometheus/tsdb/pull/414
+		// https://github.com/pmalek-sumo/prometheus/v2/tsdb/pull/414
 		"bad_header": {
 			1,
 			func(f *os.File) {

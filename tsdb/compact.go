@@ -28,13 +28,13 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/oklog/ulid"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunkenc"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/chunks"
+	tsdb_errors "github.com/pmalek-sumo/prometheus/v2/tsdb/errors"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/fileutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/index"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/labels"
 )
 
 // ExponentialBlockRanges returns the time ranges based on the stepSize.

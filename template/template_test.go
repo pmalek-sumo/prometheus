@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/promql"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 )
 
 func TestTemplateExpansion(t *testing.T) {

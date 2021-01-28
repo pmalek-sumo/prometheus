@@ -19,8 +19,8 @@ import (
 	"sort"
 
 	"github.com/pkg/errors"
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	"github.com/prometheus/prometheus/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/encoding"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 )
 
 // RecordType represents the data type of a record.

@@ -22,12 +22,12 @@ import (
 	"github.com/alecthomas/units"
 	"github.com/go-kit/kit/log"
 	"github.com/pkg/errors"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/labels"
+	"github.com/pmalek-sumo/prometheus/v2/storage"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb"
+	tsdbLabels "github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb"
-	tsdbLabels "github.com/prometheus/prometheus/tsdb/labels"
 )
 
 // ErrNotReady is returned if the underlying storage is not ready yet.

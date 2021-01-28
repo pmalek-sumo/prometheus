@@ -23,10 +23,10 @@ import (
 	"testing"
 
 	"github.com/pkg/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/labels"
-	"github.com/prometheus/prometheus/tsdb/testutil"
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/fileutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/labels"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/tsdb/wal"
 )
 
 func TestLastCheckpoint(t *testing.T) {

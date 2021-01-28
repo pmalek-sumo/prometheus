@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 )
 
 func TestIntern(t *testing.T) {

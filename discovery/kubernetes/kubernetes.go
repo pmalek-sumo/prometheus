@@ -19,12 +19,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/log/level"
-	"github.com/pkg/errors"
-	"github.com/prometheus/client_golang/prometheus"
-	config_util "github.com/prometheus/common/config"
-	"github.com/prometheus/common/model"
 	apiv1 "k8s.io/api/core/v1"
 	extensionsv1beta1 "k8s.io/api/extensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -34,7 +28,14 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/go-kit/kit/log"
+	"github.com/go-kit/kit/log/level"
+	"github.com/pkg/errors"
+	"github.com/prometheus/client_golang/prometheus"
+	config_util "github.com/prometheus/common/config"
+	"github.com/prometheus/common/model"
+
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
 )
 
 const (

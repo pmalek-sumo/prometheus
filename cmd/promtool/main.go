@@ -27,6 +27,8 @@ import (
 	"strings"
 	"time"
 
+	kingpin "gopkg.in/alecthomas/kingpin.v2"
+
 	"github.com/google/pprof/profile"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/api"
@@ -35,11 +37,10 @@ import (
 	config_util "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
-	kingpin "gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/rulefmt"
-	"github.com/prometheus/prometheus/util/promlint"
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	"github.com/pmalek-sumo/prometheus/v2/pkg/rulefmt"
+	"github.com/pmalek-sumo/prometheus/v2/util/promlint"
 )
 
 func main() {
@@ -501,7 +502,7 @@ func QueryLabels(url *url.URL, name string, p printer) int {
 	// Run query against client.
 	api := v1.NewAPI(c)
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Minute)
-	// TODO: Show warnings (second return value) somehow? See https://github.com/prometheus/prometheus/issues/5885
+	// TODO: Show warnings (second return value) somehow? See https://github.com/pmalek-sumo/prometheus/v2/issues/5885
 	val, _, err := api.LabelValues(ctx, name)
 	cancel()
 

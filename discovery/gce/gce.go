@@ -21,16 +21,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kit/kit/log"
-	"github.com/pkg/errors"
-	"github.com/prometheus/common/model"
 	"golang.org/x/oauth2/google"
 	compute "google.golang.org/api/compute/v1"
 	"google.golang.org/api/option"
 
-	"github.com/prometheus/prometheus/discovery/refresh"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/go-kit/kit/log"
+	"github.com/pkg/errors"
+	"github.com/prometheus/common/model"
+
+	"github.com/pmalek-sumo/prometheus/v2/discovery/refresh"
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/pmalek-sumo/prometheus/v2/util/strutil"
 )
 
 const (

@@ -19,13 +19,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/log"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/testutil"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/cache"
+
+	"github.com/go-kit/kit/log"
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/pmalek-sumo/prometheus/v2/util/testutil"
 )
 
 // makeDiscovery creates a kubernetes.Discovery instance for testing.

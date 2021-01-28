@@ -24,12 +24,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/log"
-	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	sd_config "github.com/prometheus/prometheus/discovery/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
 	"gopkg.in/yaml.v2"
+
+	"github.com/go-kit/kit/log"
+	"github.com/pmalek-sumo/prometheus/v2/config"
+	sd_config "github.com/pmalek-sumo/prometheus/v2/discovery/config"
+	"github.com/pmalek-sumo/prometheus/v2/discovery/targetgroup"
+	"github.com/prometheus/common/model"
 )
 
 // TestTargetUpdatesOrder checks that the target updates are received in the expected order.
